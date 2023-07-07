@@ -1,15 +1,3 @@
-var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
-if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
-{
-  let window = _____WB$wombat$assign$function_____("window");
-  let self = _____WB$wombat$assign$function_____("self");
-  let document = _____WB$wombat$assign$function_____("document");
-  let location = _____WB$wombat$assign$function_____("location");
-  let top = _____WB$wombat$assign$function_____("top");
-  let parent = _____WB$wombat$assign$function_____("parent");
-  let frames = _____WB$wombat$assign$function_____("frames");
-  let opener = _____WB$wombat$assign$function_____("opener");
-
 (function(){function a(){f||(f=!0,c[d].load[e]("firstScrollTime"))}var c=window,d="jstiming",e="tick",b=function(a){this.t={};this.tick=function(a,b,c){c=void 0!=c?c:(new Date).getTime();this.t[a]=[c,b]};this[e]("start",null,a)},l=new b;c.jstiming={Timer:b,load:l};if(c.performance&&c.performance.timing){var b=c.performance.timing,h=c[d].load,k=b.navigationStart,b=b.responseStart;0<k&&b>=k&&(h[e]("_wtsrt",void 0,k),h[e]("wtsrt_","_wtsrt",b),h[e]("tbsd_","wtsrt_"))}try{b=null,c.chrome&&c.chrome.csi&&
 (b=Math.floor(c.chrome.csi().pageT),h&&0<k&&(h[e]("_tbnd",void 0,c.chrome.csi().startE),h[e]("tbnd_","_tbnd",k))),null==b&&c.gtbExternal&&(b=c.gtbExternal.pageT()),null==b&&c.external&&(b=c.external.pageT,h&&0<k&&(h[e]("_tbnd",void 0,c.external.startE),h[e]("tbnd_","_tbnd",k))),b&&(c[d].pt=b)}catch(g){}c.tickAboveFold=function(a){var b=0;if(a.offsetParent){do b+=a.offsetTop;while(a=a.offsetParent)}750>=b&&c[d].load[e]("aft")};var f=!1;c.addEventListener?c.addEventListener("scroll",a,!1):c.attachEvent("onscroll",
 a)})();(function(a,c,d){a.fn.tinyNav=function(e){var b=a.extend({active:"selected",header:"",label:""},e);return this.each(function(){d++;var e=a(this),h="tinynav"+d,k=".l_"+h,g=a("<select/>").attr("id",h).addClass("tinynav "+h);if(e.is("ul,ol")){""!==b.header&&g.append(a("<option/>").text(b.header));var f="";e.addClass("l_"+h).find("a").each(function(){f+='<option value="'+a(this).attr("href")+'">';var b;for(b=0;b<a(this).parents("ul, ol").length-1;b++)f+="- ";f+=a(this).text()+"</option>"});g.append(f);
@@ -25,5 +13,3 @@ a.createElement=function(d){return s.shivMethods?b(d,a,c):c.createElem(d)};a.cre
 d=f.insertBefore(d.lastChild,f.firstChild);b.hasCSS=!!d}n||l(a,b);return a}var k=a.html5||{},g=/^<|^(?:button|map|select|textarea|object|iframe|option|optgroup)$/i,f=/^(?:a|b|code|div|fieldset|h1|h2|h3|h4|h5|h6|i|label|li|ol|p|q|span|strong|style|table|tbody|td|th|tr|ul)$/i,p,q="_html5shiv",m=0,r={},n;(function(){try{var a=c.createElement("a");a.innerHTML="<xyz></xyz>";p="hidden"in a;var b;if(!(b=1==a.childNodes.length)){c.createElement("a");var d=c.createDocumentFragment();b="undefined"==typeof d.cloneNode||
 "undefined"==typeof d.createDocumentFragment||"undefined"==typeof d.createElement}n=b}catch(e){n=p=!0}})();var s={elements:k.elements||"abbr article aside audio bdi canvas data datalist details figcaption figure footer header hgroup main mark meter nav output progress section summary time video",version:"3.6.2pre",shivCSS:!1!==k.shivCSS,supportsUnknownElements:n,shivMethods:!1!==k.shivMethods,type:"default",shivDocument:h,createElement:b,createDocumentFragment:function(a,b){a||(a=c);if(n)return a.createDocumentFragment();
 b=b||e(a);for(var f=b.frag.cloneNode(),g=0,h=d(),k=h.length;g<k;g++)f.createElement(h[g]);return f}};a.html5=s;h(c)})(this,document);
-
-}
